@@ -364,6 +364,6 @@ app.get(SEAT_SELECTION, (req, res) => {
 
 
 // Start the server on all available network interfaces
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Serverku is workin on port ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Serverkunow is running on port ${PORT}`);
 });
