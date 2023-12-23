@@ -5,9 +5,9 @@ const cors = require('cors');
 const app = express();
 const PORT = 8080;
 
-// Grouping dependencies
+app.use(cors()); // Enable CORS for all routes
+
 app.use(bodyParser.json());
-app.use(cors());
 
 // Constants for endpoint paths
 
