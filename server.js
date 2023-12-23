@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080; // Use the provided port or default to 8080
 
 app.use(cors()); // Enable CORS for all routes
 
@@ -365,5 +365,5 @@ app.get(SEAT_SELECTION, (req, res) => {
 
 // Start the server on all available network interfaces
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Autismolab is running on port ${PORT}`);
 });
