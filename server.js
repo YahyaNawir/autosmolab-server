@@ -363,7 +363,6 @@ app.get(SEAT_SELECTION, (req, res) => {
 
 
 
-// Start the server on all available network interfaces
-app.listen(PORT, () => {
-  console.log(`Autismolab is running on port ${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Autismolabnow is running on port ${PORT}`);
 });
